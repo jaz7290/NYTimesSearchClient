@@ -32,11 +32,6 @@ public class ArticleSearchClient {
 		this.baseURL = this.baseURL.replaceAll("version", version);
 		
 	}
-	public static void main(String[] args) {
-		ArticleSearchClient ac = new ArticleSearchClient("v2","776420edf830ff9ac46b416e9a8b1296:8:69598207");
-		Long e = new Long("1406189789000");
-		ac.search("new york", 20, null, e);
-	}
 	
 	public NyResults search( String query, Integer rows, Long startDate, Long endDate )
 	{
